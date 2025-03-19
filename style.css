@@ -61,9 +61,15 @@ a {
 }
 
 .display-1 {
-    font-size: 160px;
-    font-weight: 1000;
+    font-size: 90px;
+    font-weight: 800;
 }
+/* .border-line {
+    width: 2px;
+    height: 100px;
+    padding-top: 50px;
+} */
+
 
 
 
