@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* overflow: hidden; */
+}
+
+.text {
+    position: relative;
+    /* font-size: 32px; */
+    overflow: hidden;
+}
+.btn-light {
+    border: 2px solid #ffffff;
+
+}
+.btn-menu {
+    white-space: no-wrap;
+    /* display: block; */
+}
+.btn-blue {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+.btn-blue:hover {
+    background-color: white;
+}
+
+a {
+    color: #0dcaf0;
+    text-decoration: none;
+    background-color: transparent;
+}
+.navbar-nav .nav-link:hover {
+    color: #457efa;
+}
+
+.navbar-nav .nav-link.active {
+    color: #457efa;
+}
+.lead {
+    font-size: large;
+}
+
+.blue {
+    background-color: #0dcaf0;
+    color: white;
+    border: 1px solid #0dcaf0;
+}
+.blue:hover {
+    border: 1px solid #0dcaf0;
+    color: #0dcaf0;
+}
+.n-blue:hover {
+    color: white;
+}
+
+.progressive-bar {
+    justify-content: space-between;
+}
+
+.display-1 {
+    font-size: 160px;
+    font-weight: 1000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.typed-text {
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+}
+.first-text {
+    color: white;
+}
+.second-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0dcaf0;
+    border-left: 2px solid rgb(0, 83, 160);
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate {
+    40%, 60% {
+        left: calc(100% + 4px);
+    }
+    100% {
+        left:0;
+    }
+}
+
+@media (max-width: 400px) {
+    .typed-text {
+        font-size: 18px;
+        font-weight: 300;
+    }
+    .second-text::before {
+        animation: animate 2s steps(6) infinite;
+    }
+}
