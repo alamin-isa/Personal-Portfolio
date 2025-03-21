@@ -111,8 +111,13 @@ a {
     font-weight: 600;
 }
 .first-text {
-    color: white;
+    color: black;
 }
+
+.second-text {
+    color: #ffffff;
+}
+
 .second-text::before {
     content: '';
     position: absolute;
@@ -121,7 +126,7 @@ a {
     height: 100%;
     width: 100%;
     background-color: #0dcaf0;
-    border-left: 2px solid rgb(0, 83, 160);
+    border-left: 2px solid white;
     animation: animate 4s steps(12) infinite;
 }
 @keyframes animate {
@@ -135,10 +140,19 @@ a {
 
 @media (max-width: 400px) {
     .typed-text {
-        font-size: 18px;
-        font-weight: 300;
+        font-size: 24px;
+        font-weight: 400;
     }
-    .second-text::before {
-        animation: animate 2s steps(6) infinite;
+
+    .first-text {
+        color: black;
+        display: block;
+    }
+}
+
+@media (max-width: 650px) {
+    .first-text {
+        color: black;
+        display: block;
     }
 }
