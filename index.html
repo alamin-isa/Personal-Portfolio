@@ -426,9 +426,9 @@
               <h3 class="fw-bold m-0 d-inline">App Design</h3>
             </div>
             <p>
-              I design intuitive and visually appealing mobile apps. Using modern UI/UX principles, I craft
-              responsive and interactive app designs that engage users
-              effectively.
+              I design intuitive and visually appealing mobile apps. Using
+              modern UI/UX principles, I craft responsive and interactive app
+              designs that engage users effectively.
             </p>
             <a href="#" class="border-bottom border-info text-decoration-none"
               >Learn more</a
@@ -518,32 +518,37 @@
 
         <div class="row">
           <div class="col-12 text-center mb-2">
-            <ul class="list-inline mb-4" id="portfolio-filters">
-              <li
-                class="btn btn-sm btn-outline-primary rounded-4 p-2 px-3 m-1 active"
-                data-bs-filter="*"
-              >
-                All
-              </li>
-              <li
-                class="btn btn-sm btn-outline-primary rounded-4 p-2 px-2 m-1"
-                data-bs-filter="first"
-              >
-                Design
-              </li>
-              <li
-                class="btn btn-sm btn-outline-primary rounded-4 p-2 px-2 m-1"
-                data-bs-filter="second"
-              >
-                Development
-              </li>
-              <li
-                class="btn btn-sm btn-outline-primary rounded-4 p-2 px-2 m-1"
-                data-bs-filter="third"
-              >
-                Marketing
-              </li>
-            </ul>
+            <div 
+            class="bg-light-primary text-center btn-type"
+            role="group"
+            aria-label="Toggle Buttons">
+              <ul class="list-inline mb-4" id="portfolio-filters">
+                <li
+                  class="btn btn-sm btn-outline-primary rounded-4 p-2 px-3 m-1 active"
+                  data-bs-filter="*"
+                >
+                  All
+                </li>
+                <li
+                  class="btn btn-sm btn-outline-primary rounded-4 p-2 px-2 m-1"
+                  data-bs-filter="first"
+                >
+                  Design
+                </li>
+                <li
+                  class="btn btn-sm btn-outline-primary rounded-4 p-2 px-2 m-1"
+                  data-bs-filter="second"
+                >
+                  Development
+                </li>
+                <li
+                  class="btn btn-sm btn-outline-primary rounded-4 p-2 px-2 m-1"
+                  data-bs-filter="third"
+                >
+                  Marketing
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -722,12 +727,15 @@
                   style="font-size: 100px"
                 ></i>
                 <h4 class="fw-light mb-3">
-                  I'm truly impressed! The website you built is both visually appealing and easy to navigate. Great work!
+                  I'm truly impressed! The website you built is both visually
+                  appealing and easy to navigate. Great work!
                 </h4>
                 <img
-                  class="img-fluid rounded-circle mx-auto mb-3"
-                  src=""
+                  class="img-fluid rounded-5 mx-auto mb-3"
+                  src="./images/testimonial1.avif"
                   alt="Testimonial 1"
+                  style="width: 2.5rem;
+                  height: 2.5rem;"
                 />
                 <h5 class="font-weight-bold m-0"></h5>
                 <span>Software Developer</span>
@@ -743,12 +751,15 @@
                   style="font-size: 100px"
                 ></i>
                 <h4 class="fw-light mb-3">
-                  Amazing work! The website is sleek, responsive, and perfectly meets my needs. Thank you!
+                  Amazing work! The website is sleek, responsive, and perfectly
+                  meets my needs. Thank you!
                 </h4>
                 <img
-                  class="img-fluid rounded-circle mx-auto mb-3"
-                  src=""
+                  class="img-fluid rounded-5 mx-auto mb-3"
+                  src="./images/testimonial2.avif"
                   alt="Testimonial 2"
+                  style="width: 2.5rem;
+                  height: 2.5rem;"
                 />
                 <h5 class="font-weight-bold m-0"></h5>
                 <span>Software Programmer</span>
@@ -768,9 +779,11 @@
                   beautiful and functional website. Thank you!
                 </h4>
                 <img
-                  class="img-fluid rounded-circle mx-auto mb-3"
-                  src=""
+                  class="img-fluid rounded-5 mx-auto mb-3"
+                  src="./images/testimonial3.avif"
                   alt="Testimonial 3"
+                  style="width: 2.5rem;
+                  height: 2.5rem;"
                 />
                 <h5 class="font-weight-bold m-0"></h5>
                 <span>Web Designer</span>
@@ -957,6 +970,19 @@
       textLoad();
       setInterval(textLoad, 24000);
     </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".btn-type .btn");
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", function () {
+        buttons.forEach((btn) => btn.classList.remove("active")); // Remove active from all
+        this.classList.add("active"); // Add active to clicked button
+      });
+    });
+  });
+</script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
